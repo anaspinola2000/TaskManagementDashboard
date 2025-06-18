@@ -101,9 +101,6 @@ A feature-rich task management app built with **Next.js (App Router)**, **React 
 - **Modular Folder Structure:**  
   Organized into `/src` with clear separation between `components/`, `store/`, `utils/`, and `types/`.
 
-- **Native HTML5 Drag and Drop API:**  
-  Used instead of `react-beautiful-dnd` or `@hello-pangea/dnd` to avoid compatibility issues with React 19 and peer dependency conflicts.
-
 ---
 
 ### 📌 Assumptions Made
