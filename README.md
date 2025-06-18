@@ -135,3 +135,19 @@ A feature-rich task management app built with **Next.js (App Router)**, **React 
 - **Solution:** Switched to native drag and drop to eliminate type dependency issues entirely.
 
 ---
+
+## 🖼️ Capturas de pantalla
+
+### Vista general del dashboard
+
+![Screenshot 1](./public/img1.png)
+![Screenshot 2](./public/img2.png)
+![Screenshot 3](./public/img3.png)
+![Screenshot 4](./public/img4.png)
+![Screenshot 5](./public/img5.png)
+![Screenshot 6](./public/img6.png)
+![Screenshot 7](./public/img7.png)
+![Screenshot 8](./public/img8.png)
+![Screenshot 9](./public/img9.png)
+![Screenshot 10](./public/img10.png)
+![Screenshot 11](./public/img11.png)
