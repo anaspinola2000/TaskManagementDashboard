@@ -16,8 +16,8 @@
     "@mui/x-data-grid": "^8.5.2",
     "@reduxjs/toolkit": "^2.8.2",
     "next": "15.3.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+   "react": "~19.0.0",
+"react-dom": "~19.0.0",
     "react-redux": "^9.2.0",
     "redux-logger": "^3.0.6",
     "uuid": "^11.1.0"
