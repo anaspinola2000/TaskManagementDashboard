@@ -12,6 +12,8 @@ export interface Task {
   updatedAt: string;
 }
 
+export type TaskFormValues = Omit<Task, "id" | "createdAt" | "updatedAt">;
+
 export interface FilterOptions {
   status?: TaskStatus;
   priority?: TaskPriority;

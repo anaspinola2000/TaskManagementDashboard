@@ -30,7 +30,7 @@ export function sortTasks(tasks: Task[], sortBy: SortOption): Task[] {
 
 export function getTaskStatistics(tasks: Task[]): TaskStatistics {
   const now = new Date();
-  let stats: TaskStatistics = {
+  const stats: TaskStatistics = {
     total: tasks.length,
     completed: 0,
     inProgress: 0,

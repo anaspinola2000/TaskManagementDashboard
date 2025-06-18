@@ -15,6 +15,7 @@ import {
   Stack,
   Chip,
 } from "@mui/material";
+import { Task } from "@/src/types/task";
 
 export default function TaskDetailPage() {
   const { id } = useParams();
@@ -26,7 +27,7 @@ export default function TaskDetailPage() {
     state.tasks.tasks.find((t) => t.id === id)
   );
 
-  const handleUpdate = (updates: any) => {
+  const handleUpdate = (updates: Partial<Omit<Task, "id">>) => {
     dispatch(updateTask({ id: id as string, updates }));
     setIsEditing(false);
   };

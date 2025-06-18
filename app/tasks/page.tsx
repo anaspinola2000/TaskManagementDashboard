@@ -23,6 +23,7 @@ import ViewKanbanIcon from "@mui/icons-material/ViewKanban";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import { TaskForm } from "@/src/components/tasks/TaskForm";
 import { useRouter } from "next/navigation";
+import { Task, TaskFormValues } from "@/src/types/task";
 
 const TaskListPage = () => {
   const tasks = useAppSelector((state) => state.tasks.tasks);
@@ -30,7 +31,7 @@ const TaskListPage = () => {
   const router = useRouter();
 
   const [open, setOpen] = useState(false);
-  const [editingTask, setEditingTask] = useState<any>(null);
+  const [editingTask, setEditingTask] = useState<Task | null>(null);
   const [snackbar, setSnackbar] = useState<{
     message: string;
     severity: "success" | "error";
@@ -49,7 +50,7 @@ const TaskListPage = () => {
     setSnackbar({ message: "Task deleted", severity: "success" });
   };
 
-  const handleSubmit = (task: any) => {
+  const handleSubmit = (task: TaskFormValues) => {
     if (editingTask) {
       dispatch(updateTask({ id: editingTask.id, updates: task }));
       setSnackbar({ message: "Task updated", severity: "success" });
@@ -184,7 +185,7 @@ const TaskListPage = () => {
               setEditingTask(null);
               setOpen(false);
             }}
-            initialValues={editingTask}
+            initialValues={editingTask ?? undefined}
           />
         </DialogContent>
       </Dialog>
