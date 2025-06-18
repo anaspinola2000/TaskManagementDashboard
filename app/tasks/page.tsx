@@ -51,7 +51,7 @@ const TaskListPage = () => {
 
   const handleSubmit = (task: any) => {
     if (editingTask) {
-      dispatch(updateTask(task));
+      dispatch(updateTask({ id: editingTask.id, updates: task }));
       setSnackbar({ message: "Task updated", severity: "success" });
     } else {
       dispatch(addTask(task));

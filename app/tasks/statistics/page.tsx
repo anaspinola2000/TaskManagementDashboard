@@ -67,7 +67,6 @@ export default function TaskStatisticsPage() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-6">
-      {/* Navegación superior */}
       <Stack
         direction={{ xs: "column", sm: "row" }}
         spacing={2}
@@ -91,7 +90,7 @@ export default function TaskStatisticsPage() {
         <Button
           variant="outlined"
           startIcon={<ViewKanbanIcon />}
-          onClick={() => router.push("/kanban")}
+          onClick={() => router.push("/tasks/kanban")}
         >
           Kanban View
         </Button>
