@@ -69,10 +69,6 @@ src/utils/          # Utility functions
 - The store is configured in `src/store/index.ts`.
 - The app is wrapped with `<Provider>` in `app/layout.tsx`.
 
-## Troubleshooting
-
-- If you encounter dependency conflicts (e.g., with React 19 and `react-beautiful-dnd`), you may need to use `npm install --legacy-peer-deps` or consider downgrading React to 18 for full compatibility.
-
 ## License
 
 MIT (or specify your license)
@@ -114,8 +110,6 @@ A feature-rich task management app built with **Next.js (App Router)**, **React 
 ---
 
 ### ⚙️ Challenges Faced and Solutions Implemented
-
-#### ⚠️ React 19 incompatibility with `react-beautiful-dnd`
 
 - **Problem:** Peer dependency conflicts with React 19.
 - **Solution:** Dropped the package and used the native HTML5 Drag & Drop API instead.
